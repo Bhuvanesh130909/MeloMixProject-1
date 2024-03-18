@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Melomix</title>
+    <link rel="icon" th:href="@{/image/Calque_1.png}">
+    <link rel="stylesheet" th:href="@{css/customerhome.css}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.svg" alt="logo">
+            </div>
+            <div class="profile-container">
+                <img src="image/user (2).png" alt="Profile" class="profile-icon">
+                <ul class="dropdown-menu">
+                    <li><a class="button" href="adminloginpage" method="get">Admin Login</a></li>
+                    <li><a class="button" href="login">Logout</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Discover New Music</h2>
+                <p>Explore curated playlists and discover your next favorite songs.</p>
+                <a href="mapViewCustomerSongs" class="btn">Explore</a>
+            </div>
+        </section>
+
+        <section class="featured">
+            <main>
+                <section class="image-grid">
+                    <div class="grid-item">
+                        <div class="song-container">
+                            <img src="image/image1.png" alt="Image 1" class="song-image">
+                            <div class="audio_overlay audio_blur">
+                                <audio controls class="song">
+                                    <source src="audio/Everyday - Jason Farnham.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="song-container">
+                            <img src="image/image2.png" alt="Image 2">
+                            <div class="audio_overlay audio_blur">
+                                <audio controls class="song">
+                                    <source src="audio/Girl On Top - Amy Lynn & the Honeymen.mp3 " type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="grid-item">
+                            <div class="song-container">
+                                <img src="image/images3.jpeg" alt="Image 3">
+                                <div class="audio_overlay audio_blur">
+                                    <audio controls class="song">
+                                        <source src="audio/Last To Know - Go By Ocean _ Ryan McCaffrey.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="song-container">
+                                <img src="image/images4.jpeg" alt="Image 4">
+                                <div class="audio_overlay audio_blur">
+                                    <audio controls class="song">
+                                        <source src="audio/Two Hearts - TrackTribe.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="song-container">
+                                <img src="image/images5.jpeg" alt="Image 5">
+                                <div class="audio_overlay audio_blur">
+                                    <audio controls class="song">
+                                        <source src="audio/I Miss You - Text Me Records _ Leviathe.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </main>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Melomix App. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

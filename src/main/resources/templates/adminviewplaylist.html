@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+   <title>Melomix</title>
+    <link rel="icon" th:href="@{/image/Calque_1.png}">
+<link rel="stylesheet" th:href="@{css/viewplaylist.css}">
+</head>
+<body>
+      <header>
+    <nav>
+      <div class="logo">
+        <img src="image/logo.svg" alt="logo">
+      </div>
+       <div><a href="againadmin" method="get"><h3>Home</h3></a></div>
+       
+      <div class="profile-container">
+        <img src="image/user (2).png" alt="Profile" class="profile-icon">
+        <ul class="dropdown-menu">
+          <li><a class="button" href="login">customer Login</a></li>
+          <li><a class="button" href="login">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+  <table border=1>
+    <thead>
+      <tr>
+          <th>PlayList Name</th>
+          <th>PlayList Songs</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+          <tr th:each="plistview : ${plistview}">
+          <td th:text="${plistview.name}"></td>
+          <td>
+              <ul>
+                 <li th:each="s:${plistview.song}">
+                    <span th:text="${s.name}"></span>
+                   <audio controls>
+                   <source th:src="${s.link}" type="audio/mpeg">
+                  </audio>
+                </li>
+              </ul>
+          </td>
+    </tbody>
+  </table>
+</body>
+</html>

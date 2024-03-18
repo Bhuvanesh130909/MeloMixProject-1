@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+   <title>Melomix</title>
+    <link rel="icon" th:href="@{/image/Calque_1.png}">
+<link rel="stylesheet" th:href="@{css/viewsong.css}">
+</head>
+<body>
+	<form>
+		<header>
+			<nav>
+				<div class="logo">
+					<img src="image/logo.svg" alt="logo">
+				</div>
+                 <div><a href="againadmin" method="get"><h3>Home</h3></a></div>
+				 <div><a href="adminmapViewPlaylist" method="get"><h3>Playlists</h3></a></div>
+				<div class="profile-container">
+					<img src="image/user (2).png" alt="Profile" class="profile-icon">
+					<ul class="dropdown-menu">
+						<li><a class="button" href="login">Customer Login</a></li>
+						<li><a class="button" href="login">Logout</a></li>
+					
+					
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="container">
+					<table border="1">
+						<tr>
+							<th>name</th>
+							<th>artist</th>
+							<th>genre</th>
+							<th>link</th>
+
+						</tr>
+						<tr th:each="songs:${songs}">
+							<td th:text="${songs.name}"></td>
+							<td th:text="${songs.artist}"></td>
+							<td th:text="${songs.genre}"></td>
+							<td><audio controls>
+									<source th:src="${songs.link}" type="audio/mpeg">
+								</audio></td>
+						</tr>
+					</table>
+	</div>
+
+	</section>
+	</main>
+</body>
+</html>
+

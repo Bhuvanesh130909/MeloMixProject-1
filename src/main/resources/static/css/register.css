@@ -1,0 +1,160 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 100px;
+
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 150px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: white;
+    margin-left: 100px;
+
+
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+
+
+}
+input[type="submit"] {
+
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #4D49B4;
+  
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.2em;
+    width: 350px;
+    /* Set a fixed width */
+    text-align: center;
+    /* Center text horizontally */
+    box-shadow: 0 10px 6px rgba(123, 118, 241, 0.3);
+    height: 40px;
+    line-height: 22.4px;
+    font-size: 12px;
+    margin-left: 100px;
+   
+   
+
+
+}
+
+input[type="submit"]:hover {
+    background-color: #141328;
+
+
+}
+
+.music-image {
+    color: #868686;
+    font-weight: bold;
+
+}
+.music-image1{
+    color: #868686;
+    font-weight: bold;
+    padding-left: 0px;
+}
+
+#imagecontainer {
+    display:flex;
+    align-items: center;
+    margin-left: 0px;  
+}
+
+img {
+    height: 700px;
+    border-radius: 10px;
+    /* Optional: Add rounded corners to the image */
+    margin-right: 20px;
+    /* Add some space between the image and text */
+    margin-left: 0px;
+    /* Align the image to the left */
+    display: flex;
+    padding-right: 50px;
+    width: 600px;
+}
+
+h3 {
+    color: #FFFFFF;
+    margin-left: 100px;
+}
+p{
+    display: inline;
+    color: #868686;
+    font-weight: bold;
+ 
+}
+.login{
+    margin-left: 100px; ;
+}
+a{
+    color: #FFFFFF;
+}
+body {
+    background: linear-gradient(-45deg, #212121, #1b1b1b, #141328, #7B76F1);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup p {
+    margin: 0;
+}

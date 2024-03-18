@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif; /* Use your preferred font */
+    background-color:#212121; /* Choose your desired background color */
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 20px auto;
+    width: 40%; /* Adjust width as needed */
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    color: #FFFFFF;
+      
+}
+label{
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+      background-color: rgba(255, 255, 255, 0.07);
+      color:white;
+      margin-left: auto;
+      margin-right: auto;
+      
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 0px;
+
+}
+
+button[type="submit"] {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #4D49B4;
+  
+    border-radius: 30px;
+   
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.2em;
+    
+    /* Set a fixed width */
+    text-align: center;
+    /* Center text horizontally */
+    box-shadow: 0 5px 6px rgba(123, 118, 241, 0.3);
+    height: 40px;
+    line-height: 22.4px;
+    font-size: 12px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #141328; /* Adjust hover color */
+}
+body {
+    background: linear-gradient(-45deg, #212121, #1b1b1b, #141328, #7B76F1);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

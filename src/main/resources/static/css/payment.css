@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 100px;
+   margin-bottom: 30px;
+  }
+  
+  .subscription-container {
+    width: calc(50% - 10px);
+    padding: 60px;
+    background-color: #121212;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+    margin: 30px;
+  }
+  
+  .subscription-container h2 {
+    text-align: center;
+  }
+  
+  .subscription-container p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .subscription-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .subscription-container li {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .subscription-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4D49B4;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .subscription-container button:hover {
+    background-color:  #141328;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+body {
+    background: linear-gradient(-45deg, #212121, #1b1b1b, #141328, #7B76F1);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

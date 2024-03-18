@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+   <title>Melomix</title>
+    <link rel="icon" th:href="@{/image/Calque_1.png}"><link rel="stylesheet" th:href="@{css/login.css}">
+</head>
+
+<body>
+	<div>
+		<div id="imagecontainer">
+			<img src="image/adminlogin.png">
+			<div>
+				<h3>Admin login</h3>
+				<form action="adminlogin" method="post">
+					<label class="music-image">Email ID:</label> <input type="email"
+						placeholder="eg: parthivaratharajan@gmail.com" name="email"
+						required /> <br> <br> <label class="music-image">Password:</label>
+					<input type="password" name="password" placeholder="********"
+						required /> <br> <input type="submit" value="Login" /><br>
+					<br>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

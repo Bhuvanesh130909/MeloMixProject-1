@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+   <title>Melomix</title>
+    <link rel="icon" th:href="@{/image/Calque_1.png}">
+<link rel="stylesheet" th:href="@{css/addsongs.css}">
+</head>
+<body>
+   <div>
+		<form action="AddSongs" method="post">
+			<label>Song Name:</label> 
+			<input type="text" name="Name" required/> <br> <br> 
+			<label>Song Artist:</label> 
+			<input type="text"  name="Artist" required/> <br> <br> 
+			<label>Song Genre:</label> 
+			<input type="text" name="Genre" required/> <br> <br> 
+			
+		    <label> Song Link:</label> 
+			<input type="text" name="Link" required/> <br> <br> 
+			
+			<button value="AddSongs">Add Songs</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#212121;
+    margin: 0;
+    padding: 0;
+   
+}
+
+input[type="submit"] {
+    color:  #FFFFFF;
+    text-decoration: none;
+    background-color: #7B76F1;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.2em;
+    width: 150px; /* Set a fixed width */
+   text-align: center; /* Center text horizontally */
+    box-shadow: 0 10px 6px rgba(123, 118, 241, 0.3);
+
+}
+
+input[type="submit"]:hover {
+    background-color: #141328;
+
+}
+#imagecontainer{
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+img{
+    height: 800px;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    margin-right: 20px; /* Add some space between the image and text */
+    margin-left:0px; /* Align the image to the left */
+    display: flex;
+    padding-right: 50px;
+}
+.intro{
+    color: #FFFFFF;
+    margin-left: 100px;
+    margin-top: 500px;
+    position: absolute;
+    width: 500px;
+}
+h2,h3{
+    color: #FFFFFF;
+}
+.content{
+    animation:content 2s ease-in-out;
+}
+@keyframes content {
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+}

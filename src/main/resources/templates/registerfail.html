@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+   <title>Melomix</title>
+    <link rel="icon" th:href="@{/image/Calque_1.png}">
+        <link rel="stylesheet" th:href="@{css/registerfail.css}">
+</head>
+
+<body>
+    <div>
+        <div id="imagecontainer">
+            <img src="image/Group 33.png">
+            
+            <div>
+            <h2>Email not fount</h2>
+                <h3>Create your account</h3>
+             <div class="buttoncontainer"><a href="adminregister"><h4>Admin</h4></a></div>
+                <form action="register" method="post">
+                    <label class="music-image">Email ID:</label>
+                    <input type="email" placeholder="eg: parthivaratharajan@gmail.com" name="email" required /> <br> <br>
+                    <label class="music-image">Password:</label>
+                    <input type="password" name="password" placeholder="********" required /> <br> <br>
+
+                    <label class="music-image">Gender:</label>
+                    <input type="radio" name="gender" value="Male"/>
+                    <p>Male</p>
+                    <input type="radio" name="gender" value="Female" /><p>Female</p>
+                    <input type="radio" name="gender" value="Others" /><p>Others</p>
+                     <br> <br>
+
+
+                  
+                    <button type="submit" name="role" value="Customer"/>Register</button><br><br>
+                    <div class="login">
+                    <p>Already have an Account ?<a href="login">Login</a></p>
+                </div>
+                    
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
